@@ -36,8 +36,8 @@ const CAMPOS_CALIF = {
   alumno:     "alumno",
   fecha:      "fecha",
   actividad:  "actividad",
-  calif:      "calif",
-  asignatura: "asignatura"
+  calif:      "calificacion",    // ← CAMBIO: era "calif", ahora "calificacion"
+  asignatura: "materia"           // ← CAMBIO: era "asignatura", ahora "materia"
 };
 
 // ✅ AGREGAR ESTOS EXPORTS AL FINAL
