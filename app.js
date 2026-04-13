@@ -125,20 +125,25 @@ async function buscarGrupo() {
     if (alumnosGrupo.length === 0)
       return mostrarError("⚠️ No se encontraron alumnos en ese grupo.");
 
-    // 2. Calificaciones
-    const snapCalif = await get(ref(db, DB_NODES.calificaciones));
-    const mapaData  = {};
+    // 2. Calificaciones - Nueva estructura con email como clave
+const snapCalif = await get(ref(db, DB_NODES.calificaciones));
+const mapaData  = {};
 
-    if (snapCalif.exists()) {
-      snapCalif.forEach(child => {
-        const item   = child.val();
-        const correo = (item[CAMPOS_CALIF.correo] || "").toLowerCase().trim();
-        if (correosSet.has(correo)) {
-          if (!mapaData[correo]) mapaData[correo] = [];
-          mapaData[correo].push(item);
-        }
-      });
-    }
+if (snapCalif.exists()) {
+  snapCalif.forEach(emailNode => {
+    const emailKey = emailNode.key.replace(/_/g, ".").toLowerCase(); // Convierte a_email@domain a a.email@domain
+    
+    emailNode.forEach(indexNode => {
+      const item = indexNode.val();
+      const correo = (item[CAMPOS_CALIF.correo] || "").toLowerCase().trim();
+      
+      if (correosSet.has(correo)) {
+        if (!mapaData[correo]) mapaData[correo] = [];
+        mapaData[correo].push(item);
+      }
+    });
+  });
+}
 console.log("📋 Alumnos encontrados:", alumnosGrupo.map(a => a.correo));
 console.log("📊 Correos en calificaciones:", Object.keys(mapaData));
     
