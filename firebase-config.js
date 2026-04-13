@@ -39,3 +39,9 @@ const CAMPOS_CALIF = {
   calif:      "calif",
   asignatura: "asignatura"
 };
+
+// ✅ AGREGAR ESTOS EXPORTS AL FINAL
+window.firebaseConfig = firebaseConfig;
+window.DB_NODES = DB_NODES;
+window.CAMPOS_ALUMNO = CAMPOS_ALUMNO;
+window.CAMPOS_CALIF = CAMPOS_CALIF;
