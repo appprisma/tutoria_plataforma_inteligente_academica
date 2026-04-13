@@ -8,16 +8,16 @@
 //      no necesitas autenticación adicional.
 //      Si no, activa "Acceso anónimo" en Authentication.
 // ============================================================
-
-const firebaseConfig = {
-  apiKey:            "TU_API_KEY",
-  authDomain:        "TU_PROJECT_ID.firebaseapp.com",
-  databaseURL:       "https://TU_PROJECT_ID-default-rtdb.firebaseio.com",
-  projectId:         "TU_PROJECT_ID",
-  storageBucket:     "TU_PROJECT_ID.appspot.com",
-  messagingSenderId: "TU_MESSAGING_SENDER_ID",
-  appId:             "TU_APP_ID"
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyCkSgBxKaZBEDrF_RhFGCK6tZjlzdTQt10",
+  authDomain: "er-reporte---3er-periodo-44119.firebaseapp.com",
+  databaseURL: "https://er-reporte---3er-periodo-44119-default-rtdb.firebaseio.com",
+  projectId: "er-reporte---3er-periodo-44119",
+  storageBucket: "er-reporte---3er-periodo-44119.firebasestorage.app",
+  messagingSenderId: "215491922286",
+  appId: "1:215491922286:web:640b1a035e9ccd6432597f"
 };
+export { FIREBASE_CONFIG };
 
 // ============================================================
 //  🗂️  ESTRUCTURA DE DATOS EN FIREBASE
