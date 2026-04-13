@@ -139,7 +139,9 @@ async function buscarGrupo() {
         }
       });
     }
-
+console.log("📋 Alumnos encontrados:", alumnosGrupo.map(a => a.correo));
+console.log("📊 Correos en calificaciones:", Object.keys(mapaData));
+    
     // 3. Procesamiento
     const resultados = alumnosGrupo.map(alumno => {
       const filasAlumno    = mapaData[alumno.correo] || [];
