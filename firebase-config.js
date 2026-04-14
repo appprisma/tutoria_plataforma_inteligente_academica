@@ -60,3 +60,8 @@ const CAMPOS_CALIF = {
 function correoAKey(correo) {
   return correo.replace(/\./g, "_");
 }
+// ✅ HACER VARIABLES GLOBALES ACCESIBLES A app.j
+window.firebaseConfig = firebaseConfig;
+window.DB_NODES = DB_NODES;
+window.CAMPOS_ALUMNO = CAMPOS_ALUMNO;
+window.CAMPOS_CALIF = CAMPOS_CALIF;
