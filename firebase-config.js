@@ -5,7 +5,7 @@
 //  → General → Tus apps → SDK de la app y configuración
 // ============================================================
 
-const FIREBASE_CONFIG = {
+const FIREBASECONFIG = {
   apiKey: "AIzaSyCkSgBxKaZBEDrF_RhFGCK6tZjlzdTQt10",
   authDomain: "er-reporte---3er-periodo-44119.firebaseapp.com",
   databaseURL: "https://er-reporte---3er-periodo-44119-default-rtdb.firebaseio.com",
