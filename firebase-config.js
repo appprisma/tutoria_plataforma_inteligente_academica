@@ -5,14 +5,14 @@
 //  → General → Tus apps → SDK de la app y configuración
 // ============================================================
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCkSgBxKaZBEDrF_RhFGCK6tZjlzdTQt10",
-  authDomain: "er-reporte---3er-periodo-44119.firebaseapp.com",
-  databaseURL: "https://er-reporte---3er-periodo-44119-default-rtdb.firebaseio.com",
-  projectId: "er-reporte---3er-periodo-44119",
-  storageBucket: "er-reporte---3er-periodo-44119.firebasestorage.app",
-  messagingSenderId: "215491922286",
-  appId: "1:215491922286:web:640b1a035e9ccd6432597f"
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyDywa2TRCcsPbogmMpvO-awQM3GyD_tpSY",
+  authDomain: "calif-sec-montes-07-05-2026.firebaseapp.com",
+  databaseURL: "https://calif-sec-montes-07-05-2026-default-rtdb.firebaseio.com",
+  projectId: "calif-sec-montes-07-05-2026",
+  storageBucket: "calif-sec-montes-07-05-2026.firebasestorage.app",
+  messagingSenderId: "742610869102",
+  appId: "1:742610869102:web:ba61e56c3e3feb641a7f7f"
 };
 
 // ============================================================
