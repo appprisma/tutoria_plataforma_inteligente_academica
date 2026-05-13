@@ -6,7 +6,7 @@ import { initializeApp }         from "https://www.gstatic.com/firebasejs/10.12.
 import { getDatabase, ref, get } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-const app  = initializeApp(firebaseConfig);
+const app  = initializeApp(FIREBASE_CONFIG);
 const db   = getDatabase(app);
 const auth = getAuth(app);
 
